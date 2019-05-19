@@ -1,0 +1,7 @@
+<h2>Total: {{ data?.count }}</h2>
+<h5>Open browser's console and check the diffrence in actual responce and adapted data.</h5>
+<div>
+    <ng-container *ngFor="let entry of data?.entries">
+        <pre>{{ entry | json }}</pre>
+    </ng-container>
+</div>
